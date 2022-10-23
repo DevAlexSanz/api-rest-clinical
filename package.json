@@ -1,0 +1,30 @@
+{
+  "name": "api-rest-clinical",
+  "version": "1.0",
+  "description": "Api created with love <3",
+  "main": "src/main.js",
+  "author": "DevAlexSanz",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/main.js",
+    "start": "node dist/main.js",
+    "build": "babel ./src -d dist"
+  },
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "joi": "^17.6.0",
+    "mongoose": "^6.1.7",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@types/node": "^17.0.10",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
